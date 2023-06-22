@@ -1,0 +1,185 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 1.2rem;
+    background-color: RGB(60, 60, 119);
+}
+
+body {
+    min-width: 800px;
+    margin: 0, auto;
+}
+
+.header {
+    font-family: monospace;
+    background: grey;
+    padding: 2px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.left-links {
+    font-size: xx-large;
+}
+
+.right-links {
+    font-size: 15px;
+    align-items: space-evenly;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    margin: 30px auto;
+    padding: 0;
+    gap: 8px;
+}
+
+main {
+    display: flex;
+}
+
+.aside-container {
+    width: 20%;
+    max-height: 100%;
+    overflow: auto;
+    display: grid;
+    gap: 8px;
+    padding: 1rem;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.item {
+    height: 10rem;
+    background-color: white;
+    border: 1px solid grey;
+    text-align: center;
+}
+
+#aside1 {
+    border-radius: 1.4rem;
+    
+}
+
+.aside-container1{
+    width: 80%;
+    resize: both;
+    overflow: auto;
+    display: grid;
+    background: grey;
+    color: black;
+    gap: 7px; 
+    grid-template-rows: repeat(1, 60px) repeat(3, 1f);
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: 
+      'card1 card1 card1 card1'
+      'card2 card3 card4 card5'
+      'card6 card7 card8 card9'
+      'card10 card11 card12 card13'
+    
+}
+
+.card {
+    border: 1px solid RGB(60, 60, 119);
+    background: white;
+    text-align: center;
+    
+}
+
+.nav {
+    display: grid;
+    padding: 0;
+    text-align: center;
+    color: white;
+    background: RGB(60, 60, 119);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+#card1 {
+    grid-area: card1;
+}
+
+#card2 {
+    grid-area: card2;
+    padding: 1rem;
+}
+
+#card3 {
+    grid-area: card3;
+    padding: 1rem;
+}
+
+#card4 {
+    grid-area: card4;
+    padding: 1rem;
+}
+
+#card5 {
+    grid-area: card5;
+    padding: 1rem;
+}
+
+#card6 {
+    grid-area: card6;
+    padding: 1rem;
+}
+
+#card7 {
+    grid-area: card7;
+    padding: 1rem;
+}
+
+#card8 {
+    grid-area: card8;
+    padding: 1rem;
+}
+
+#card9 {
+    grid-area: card9;
+    padding: 1rem;
+}
+
+#card10 {
+    grid-area: card10;
+    padding: 1rem;
+}
+
+#card11 {
+    grid-area: card11;
+    padding: 1rem;
+}
+
+#card12 {
+    grid-area: card12;
+    padding: 1rem;
+}
+
+#card13 {
+    grid-area: card13;
+    padding: 1rem;
+}
+
+.footer {
+    display: grid;
+    background-color: gray;
+    color: white;
+    text-align: center;
+    gap: 7px;
+    padding: 0;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    border: 1px solid grey;
+}
